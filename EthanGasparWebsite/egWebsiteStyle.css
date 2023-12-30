@@ -1,0 +1,164 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+body{
+    font-size:  2rem;
+    background-color: gray;
+    font-family: Abel;
+    text-align: center;
+    margin: auto; 
+}
+
+header{
+    background-color: lightgrey;
+    border: .1rem solid aliceblue;
+    height: fit-content;
+    padding-left: 35rem;
+    padding-right: 35rem;
+    padding-bottom: 2rem;
+}
+
+header > p{
+    font-size: 2.1rem;
+    margin: 0;
+    text-align: center;
+
+}
+
+h1{
+    font-size: 8rem;
+    margin:0;
+    text-align: center;
+
+}
+
+h3{
+    font-size: 3.2rem;
+    text-align: center;
+}
+h4{
+    font-size: 3 rem;
+    margin:0;
+    text-align: center;
+}
+h5{
+    font-size: 2.5rem;
+    margin:0;
+    text-align: center;
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 9rem;
+}
+
+section ul {
+    background-color: white;
+    list-style: none;
+    height: fit-content;
+    width: 40vw;
+    text-align: center;
+    border-radius: 2rem;
+    margin: 2rem;
+    padding: 2rem; /* Add this line */
+}
+
+footer {
+    background-color: seagreen;
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    height: 3vh;
+}
+
+#email{
+    display: inline-flex;
+    align-items: baseline;
+    column-gap: 0.3rem;
+    font-size: 2rem;
+    color: white;
+    background-color: seagreen;
+    
+
+}
+#NavBar {
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+#links{
+    display: flex;
+    justify-content: space-around;
+    background-color: seagreen;
+    color: white;
+    font-size: 2rem; 
+    width: 45vw;
+    height: 9vh;
+}
+#links a:hover {
+    background-color: rgb(64, 158, 105);
+}
+
+#NavBar > nav{
+    flex-direction: row;
+    background-color: black;
+    overflow: hidden;
+    width: 55vw;
+    height: 9vh;
+}
+
+#NavBar > nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#NavBar > nav ul li a {
+    display: block;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+#NavBar > nav ul li a:hover {
+    background-color:rgb(101, 101, 101) ;
+}
+
+a{
+    margin-right:1rem;
+    text-decoration: none;
+}
+
+.fa-brands.fa-github{
+    color: white;
+}
+
+.fa-solid.fa-envelope{
+    color:white;
+}
+
+.fa-brands.fa-linkedin{
+    color: white;
+}
+
+.Work-title{
+    font-size: 2.3rem;
+    color: blanchedalmond;
+    display:inline;
+    text-align: left;
+    margin:0;
+}
+.Work-title > h3{
+    font-size: 2.3rem;
+    color: aliceblue;
+    display:inline;
+    text-align: left;
+    margin: 0;
+}
