@@ -3,16 +3,17 @@ html{
     scroll-behavior: smooth;
     overflow: auto;
 }
+
 body{
-    font-size:  2rem;
-    background-color: gray;
-    font-family: Abel;
+    font-size:  2.2rem;
+    background-color: white;
+    font-family: 'Exo 2', sans-serif;
     text-align: center;
     margin: auto; 
 }
 
 header{
-    background-color: lightgrey;
+    background-color: white;
     border: .1rem solid aliceblue;
     height: fit-content;
     padding-left: 35rem;
@@ -20,15 +21,22 @@ header{
     padding-bottom: 2rem;
 }
 
-header > p{
-    font-size: 2.1rem;
+header p{
+    font-size: 2.4rem;
     margin: 0;
     text-align: center;
+}
 
+header section{
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+    align-items: center;
+    padding-top: 1rem;
 }
 
 h1{
-    font-size: 8rem;
+    font-size: 5rem;
     margin:0;
     text-align: center;
 
@@ -38,23 +46,24 @@ h3{
     font-size: 3.2rem;
     text-align: center;
 }
+
 h4{
     font-size: 3 rem;
     margin:0;
     text-align: center;
 }
+
 h5{
     font-size: 2.5rem;
     margin:0;
     text-align: center;
-
 }
 
 section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 9rem;
+    padding-top: 4rem;
 }
 
 section ul {
@@ -64,8 +73,8 @@ section ul {
     width: 40vw;
     text-align: center;
     border-radius: 2rem;
-    margin: 2rem;
-    padding: 2rem; /* Add this line */
+    margin: 1rem;
+    padding: 1rem; 
 }
 
 footer {
@@ -84,23 +93,24 @@ footer {
     font-size: 2rem;
     color: white;
     background-color: seagreen;
-    
-
 }
+
 #NavBar {
     display: flex;
     position: sticky;
     top: 0;
 }
+
 #links{
     display: flex;
     justify-content: space-around;
     background-color: seagreen;
     color: white;
     font-size: 2rem; 
-    width: 45vw;
+    width: 40vw;
     height: 9vh;
 }
+
 #links a:hover {
     background-color: rgb(64, 158, 105);
 }
@@ -109,7 +119,7 @@ footer {
     flex-direction: row;
     background-color: black;
     overflow: hidden;
-    width: 55vw;
+    width: 60vw;
     height: 9vh;
 }
 
@@ -155,10 +165,19 @@ a{
     text-align: left;
     margin:0;
 }
+
 .Work-title > h3{
     font-size: 2.3rem;
     color: aliceblue;
     display:inline;
     text-align: left;
     margin: 0;
+}
+
+#cLogo{
+    width: 5rem;
+    height: 5rem;
+    margin: 0;
+    padding: 0;
+    display: inline;
 }
