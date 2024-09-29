@@ -1,24 +1,23 @@
 html{
     font-size: 62.5%;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 183, 183));
     scroll-behavior: smooth;
-    overflow: auto;
+    overflow: scroll;
 }
 
 body{
     font-size:  2.2rem;
-    background-color: white;
     font-family: 'Exo 2', sans-serif;
     text-align: center;
     margin: auto; 
 }
 
 header{
-    background-color: white;
     border: .1rem solid aliceblue;
     height: fit-content;
-    padding-left: 35rem;
-    padding-right: 35rem;
-    padding-bottom: 2rem;
+    padding-left: 15vh;
+    padding-right: 15vh;
+    padding-bottom: 1vh;
 }
 
 header p{
@@ -30,16 +29,16 @@ header p{
 header section{
     display: flex;
     justify-content: center;
-    column-gap: 3rem;
+    column-gap: 1vh;
     align-items: center;
-    padding-top: 1rem;
+    padding-top: 2vh;
+
 }
 
 h1{
     font-size: 5rem;
     margin:0;
     text-align: center;
-
 }
 
 h3{
@@ -47,8 +46,14 @@ h3{
     text-align: center;
 }
 
+#projects li h4{
+    font-size: 3.3 rem;
+    margin:0;
+    text-align: center;
+}
+
 h4{
-    font-size: 3 rem;
+    font-size: 3rem;
     margin:0;
     text-align: center;
 }
@@ -92,7 +97,6 @@ footer {
     column-gap: 0.3rem;
     font-size: 2rem;
     color: white;
-    background-color: seagreen;
 }
 
 #NavBar {
@@ -107,7 +111,7 @@ footer {
     background-color: seagreen;
     color: white;
     font-size: 2rem; 
-    width: 40vw;
+    width: 30vw;
     height: 9vh;
 }
 
@@ -119,7 +123,7 @@ footer {
     flex-direction: row;
     background-color: black;
     overflow: hidden;
-    width: 60vw;
+    width: 70vw;
     height: 9vh;
 }
 
@@ -180,4 +184,24 @@ a{
     margin: 0;
     padding: 0;
     display: inline;
+}
+
+
+.role_company{
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 0;
+    padding: .2rem;
+}
+
+.role_description{
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.role_dates{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
 }
