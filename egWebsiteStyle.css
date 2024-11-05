@@ -1,52 +1,67 @@
-html {
+html{
     font-size: 62.5%;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 183, 183));
     scroll-behavior: smooth;
+    overflow: scroll;
 }
 
-body {
-    font-size: 2.2rem;
+body{
+    font-size:  2.2rem;
     font-family: 'Exo 2', sans-serif;
     text-align: center;
-    margin: auto;
+    margin: auto; 
 }
 
-header {
-    border: 0.1rem solid aliceblue;
+header{
+    border: .1rem solid aliceblue;
     height: fit-content;
-    padding: 2rem 15%;
+    padding-left: 15vh;
+    padding-right: 15vh;
+    padding-bottom: 1vh;
 }
 
-header p {
+header p{
     font-size: 2.4rem;
     margin: 0;
+    text-align: center;
 }
 
-header section {
+header section{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    column-gap: 1vh;
     align-items: center;
     padding-top: 2vh;
+
 }
 
-h1 {
+h1{
     font-size: 5rem;
-    margin: 0;
+    margin:0;
+    text-align: center;
 }
 
-h3 {
+h3{
     font-size: 3.2rem;
+    text-align: center;
 }
 
-h4 {
+#projects li h4{
+    font-size: 3.3 rem;
+    margin:0;
+    text-align: center;
+}
+
+h4{
     font-size: 3rem;
-    margin: 0;
+    margin:0;
+    text-align: center;
 }
 
-h5 {
+h5{
     font-size: 2.5rem;
-    margin: 0;
+    margin:0;
+    text-align: center;
 }
 
 section {
@@ -60,11 +75,11 @@ section ul {
     background-color: white;
     list-style: none;
     height: fit-content;
-    width: 60%;
+    width: 40vw;
     text-align: center;
     border-radius: 2rem;
     margin: 1rem;
-    padding: 2rem;
+    padding: 1rem; 
 }
 
 footer {
@@ -72,103 +87,121 @@ footer {
     font-size: 1.4rem;
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    bottom: 0;
+    height: 3vh;
 }
 
-#email {
+#email{
     display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
+    align-items: baseline;
+    column-gap: 0.3rem;
     font-size: 2rem;
     color: white;
 }
 
 #NavBar {
     display: flex;
-    flex-wrap: wrap;
     position: sticky;
     top: 0;
 }
 
-#links, #NavBar > nav {
-    width: 100%;
+#links{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#links {
+    justify-content: space-around;
     background-color: seagreen;
     color: white;
-    padding: 1rem 0;
-}
-
-#links a {
-    margin: 0 1rem;
+    font-size: 2rem; 
+    width: 30vw;
+    height: 9vh;
 }
 
 #links a:hover {
     background-color: rgb(64, 158, 105);
 }
 
-#NavBar > nav {
+#NavBar > nav{
+    flex-direction: row;
     background-color: black;
+    overflow: hidden;
+    width: 70vw;
+    height: 9vh;
 }
 
 #NavBar > nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1rem 0;
-}
-
-#NavBar > nav ul li {
-    margin: 0.5rem 1rem;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #NavBar > nav ul li a {
+    display: block;
     color: white;
     font-size: 2rem;
+    text-align: center;
     text-decoration: none;
 }
 
 #NavBar > nav ul li a:hover {
-    background-color: rgb(101, 101, 101);
+    background-color:rgb(101, 101, 101) ;
 }
 
-a {
+a{
+    margin-right:1rem;
     text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.fa-brands.fa-github{
+    color: white;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 1.8rem;
-    }
-    header {
-        padding: 2rem 5%;
-    }
-    h1 {
-        font-size: 4rem;
-    }
-    h3, h4, h5 {
-        font-size: 2.5rem;
-    }
-    header section {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    #NavBar {
-        flex-direction: column;
-    }
-    #NavBar > nav ul {
-        flex-direction: column;
-    }
-    section ul {
-        width: 90%;
-    }
+.fa-solid.fa-envelope{
+    color:white;
+}
+
+.fa-brands.fa-linkedin{
+    color: white;
+}
+
+.Work-title{
+    font-size: 2.3rem;
+    color: blanchedalmond;
+    display:inline;
+    text-align: left;
+    margin:0;
+}
+
+.Work-title > h3{
+    font-size: 2.3rem;
+    color: aliceblue;
+    display:inline;
+    text-align: left;
+    margin: 0;
+}
+
+#cLogo{
+    width: 5rem;
+    height: 5rem;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+
+.role_company{
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 0;
+    padding: .2rem;
+}
+
+.role_description{
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.role_dates{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
 }
