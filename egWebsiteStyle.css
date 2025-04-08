@@ -1,207 +1,279 @@
-html{
-    font-size: 62.5%;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 183, 183));
+:root {
+    --primary-color: seagreen;
+    --secondary-color: rgb(64, 158, 105);
+    --background-gradient: linear-gradient(rgb(255, 255, 255), rgb(180, 183, 183));
+    --text-color: #333;
+    --light-text: white;
+    --border-color: #ddd;
+    --card-background: white;
+    --nav-background: black;
+    --base-font-size: 10px;
+    --header-padding: 2rem;
+    --section-padding: 3rem 1.5rem;
+    --max-width: 1100px;
+}
+
+html {
+    font-size: var(--base-font-size);
     scroll-behavior: smooth;
-    overflow: scroll;
 }
 
-body{
-    font-size:  2.2rem;
+body {
     font-family: 'Exo 2', sans-serif;
-    text-align: center;
-    margin: auto; 
-}
-
-header{
-    border: .1rem solid aliceblue;
-    height: fit-content;
-    padding-left: 15vh;
-    padding-right: 15vh;
-    padding-bottom: 1vh;
-}
-
-header p{
-    font-size: 2.4rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-image: var(--background-gradient);
     margin: 0;
-    text-align: center;
+    padding-top: 60px;
 }
 
-header section{
-    display: flex;
-    justify-content: center;
-    column-gap: 1vh;
-    align-items: center;
-    padding-top: 2vh;
-
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
-h1{
-    font-size: 5rem;
-    margin:0;
-    text-align: center;
+h1 { font-size: 4rem; }
+h2 { font-size: 3.2rem; margin-bottom: 2.5rem; text-align: center;}
+h3 { font-size: 2.8rem; }
+h4 { font-size: 2.2rem; }
+h5 { font-size: 1.8rem; font-weight: 300;}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
-h3{
-    font-size: 3.2rem;
-    text-align: center;
+a {
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
-#projects li h4{
-    font-size: 3.3 rem;
-    margin:0;
-    text-align: center;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-h4{
-    font-size: 3rem;
-    margin:0;
-    text-align: center;
-}
-
-h5{
-    font-size: 2.5rem;
-    margin:0;
-    text-align: center;
-}
-
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 4rem;
-}
-
-section ul {
-    background-color: white;
+ul {
     list-style: none;
-    height: fit-content;
-    width: 40vw;
-    text-align: center;
-    border-radius: 2rem;
-    margin: 1rem;
-    padding: 1rem; 
-}
-
-footer {
-    background-color: seagreen;
-    font-size: 1.4rem;
-    color: white;
-    text-align: center;
-    bottom: 0;
-    height: 3vh;
-}
-
-#email{
-    display: inline-flex;
-    align-items: baseline;
-    column-gap: 0.3rem;
-    font-size: 2rem;
-    color: white;
+    padding: 0;
+    margin: 0;
 }
 
 #NavBar {
+    background-color: var(--nav-background);
+    color: var(--light-text);
     display: flex;
-    position: sticky;
-    top: 0;
-}
-
-#links{
-    display: flex;
-    justify-content: space-around;
-    background-color: seagreen;
-    color: white;
-    font-size: 2rem; 
-    width: 30vw;
-    height: 9vh;
-}
-
-#links a:hover {
-    background-color: rgb(64, 158, 105);
-}
-
-#NavBar > nav{
-    flex-direction: row;
-    background-color: black;
-    overflow: hidden;
-    width: 70vw;
-    height: 9vh;
-}
-
-#NavBar > nav ul {
-    display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+    height: 60px;
 }
 
-#NavBar > nav ul li a {
-    display: block;
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-    text-decoration: none;
+#nav-links {
+    display: flex;
+    gap: 2rem;
 }
 
-#NavBar > nav ul li a:hover {
-    background-color:rgb(101, 101, 101) ;
+#nav-links a {
+    color: var(--light-text);
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
 }
 
-a{
-    margin-right:1rem;
-    text-decoration: none;
+#nav-links a:hover {
+    color: var(--secondary-color);
 }
 
-.fa-brands.fa-github{
-    color: white;
+#social-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
-.fa-solid.fa-envelope{
-    color:white;
+#social-links a {
+    color: var(--light-text);
+    transition: color 0.3s ease;
 }
 
-.fa-brands.fa-linkedin{
-    color: white;
+#social-links a:hover {
+    color: var(--secondary-color);
 }
 
-.Work-title{
-    font-size: 2.3rem;
-    color: blanchedalmond;
-    display:inline;
-    text-align: left;
-    margin:0;
+#email-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.Work-title > h3{
-    font-size: 2.3rem;
-    color: aliceblue;
-    display:inline;
-    text-align: left;
-    margin: 0;
-}
-
-#cLogo{
-    width: 5rem;
-    height: 5rem;
-    margin: 0;
-    padding: 0;
+.email-text {
+    font-size: 1.4rem;
     display: inline;
 }
 
-
-.role_company{
-    font-size: 2.8rem;
+header#about {
     text-align: center;
-    margin: 0;
-    padding: .2rem;
+    padding: var(--header-padding) 2rem;
+    padding-top: 4rem;
+    margin: 0 auto;
+    max-width: var(--max-width);
 }
 
-.role_description{
-    font-size: 2rem;
-    text-align: center;
-    margin: 0;
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+    margin: 1.5rem auto;
 }
 
-.role_dates{
-    font-size: 2.5rem;
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+#cLogo {
+    width: 2.4em;
+    height: 2.4em;
+}
+
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.content-section {
+    padding: var(--section-padding);
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.section-content {
+    text-align: left;
+}
+
+.project-list, .leadership-list {
+    display: grid;
+    gap: 2.5rem;
+}
+
+.project-item, .leadership-item {
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 5px;
+    border-left: 5px solid var(--primary-color);
+}
+
+.role_company {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.role_dates {
+    font-size: 1.4rem;
+    color: #666;
+    margin-bottom: 0.8rem;
+}
+
+.role_description {
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text);
     text-align: center;
-    margin: 0;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 3.5rem; }
+    h2 { font-size: 2.8rem; }
+    h3 { font-size: 2.4rem; }
+
+    #NavBar {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    #nav-links {
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem 1.5rem;
+    }
+
+     #social-links {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .email-text {
+       display: none;
+    }
+
+    body {
+        padding-top: 100px;
+    }
+
+    .project-list, .leadership-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 9px;
+    }
+
+    body {
+        padding-top: 120px;
+    }
+
+     #NavBar {
+        padding: 0.5rem;
+    }
+
+    #nav-links a {
+        font-size: 1.5rem;
+    }
+
+     #nav-links {
+        gap: 0.5rem 1rem;
+    }
+
+    #social-links {
+        gap: 1rem;
+    }
+
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2.4rem; }
+
+     .content-section {
+        padding: 2rem 1rem;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
 }
