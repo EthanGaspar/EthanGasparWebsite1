@@ -1,3 +1,8 @@
+:root {
+    --text-color: #333;
+    --background-gradient: linear-gradient(rgb(255, 255, 255), rgb(180, 183, 183));
+}
+
 html {
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
@@ -37,4 +42,10 @@ html {
 
 .portrait{
     text-align: left;
+}
+
+a,
+a:visited {
+  color: blue;
+  text-decoration: none;
 }
